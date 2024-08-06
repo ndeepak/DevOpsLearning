@@ -174,3 +174,195 @@
 5. **Kill All Processes by Name:**
     `pkill process_name`
 By mastering these basic Linux commands, a system engineer can effectively manage, monitor, and troubleshoot a Linux system.
+
+---
+commands `locate`, `find`, `chmod`, `chown`, `df`, and `du`, explaining their usage with code examples and practical use cases.
+
+### 1. `locate` Command
+
+The `locate` command is used to find files in a directory hierarchy quickly. It searches through a pre-built database (usually updated periodically by the `updatedb` command) and returns paths to files matching the search criteria.
+
+#### Basic Syntax
+`locate [OPTIONS] PATTERN`
+
+#### Examples
+
+**Example 1: Basic Usage
+```
+# Find all files named 'bashrc'
+locate bashrc
+
+# Output (example)
+# /home/user/.bashrc
+# /etc/skel/.bashrc
+```
+
+**Example 2: Find Files with a Specific Extension
+```
+# Find all files with the .txt extension
+locate "*.txt"
+
+# Output (example)
+# /home/user/documents/notes.txt
+# /home/user/todo.txt
+
+```
+
+### 2. `find` Command
+
+The `find` command searches for files in a directory hierarchy based on various criteria, such as file name, type, modification time, size, etc. Unlike `locate`, `find` searches the file system in real-time.
+
+#### Basic Syntax
+`find [PATH] [OPTIONS] [EXPRESSION]`
+
+#### Examples
+
+**Example 1: Find Files by Name
+```
+# Find all files named 'example.txt' in the current directory and its subdirectories
+find . -name "example.txt"
+
+# Output (example)
+# ./documents/example.txt
+```
+
+**Example 2: Find Files Modified in the Last 7 Days
+```
+# Find files modified in the last 7 days in the /var/log directory
+find /var/log -type f -mtime -7
+
+# Output (example)
+# /var/log/syslog.1
+# /var/log/auth.log
+```
+
+**Example 3: Find and Execute a Command
+```
+# Find and delete all .tmp files in /tmp
+find /tmp -name "*.tmp" -type f -delete
+
+```
+
+### 3. `chmod` Command
+
+The `chmod` command changes the file mode (permissions) of a file or directory. It can set read, write, and execute permissions for the owner, group, and others.
+
+#### Basic Syntax
+`chmod [OPTIONS] MODE FILE`
+
+#### Examples
+
+**Example 1: Set File Permissions Using Numeric Mode
+```
+# Set permissions to 755 (rwxr-xr-x) for a script.sh file
+chmod 755 script.sh
+
+# Output (example)
+# -rwxr-xr-x 1 user user 1234 Aug 7 12:34 script.sh
+```
+
+**Example 2: Set File Permissions Using Symbolic Mode**
+```
+# Add execute permission for the user
+chmod u+x script.sh
+
+# Remove write permission for others
+chmod o-w file.txt
+```
+
+### 4. `chown` Command
+
+The `chown` command changes the owner and group of a file or directory.
+
+#### Basic Syntax
+`chown [OPTIONS] OWNER[:GROUP] FILE`
+
+#### Examples
+
+**Example 1: Change Owner
+```
+# Change the owner of file.txt to user 'john'
+chown john file.txt
+
+# Output (example)
+# -rw-r--r-- 1 john user 1234 Aug 7 12:34 file.txt
+```
+
+**Example 2: Change Owner and Group
+```
+# Change the owner to 'john' and the group to 'developers'
+chown john:developers project/
+
+# Output (example)
+# drwxr-xr-x 1 john developers 4096 Aug 7 12:34 project/
+```
+
+### 5. `df` Command
+
+The `df` command reports file system disk space usage. It shows the amount of disk space used and available on mounted file systems.
+
+#### Basic Syntax
+
+`df [OPTIONS] [FILE]`
+
+#### Examples
+
+**Example 1: Display Disk Space Usage**
+
+```
+# Show disk space usage in human-readable format
+df -h
+
+# Output (example)
+# Filesystem      Size  Used Avail Use% Mounted on
+# /dev/sda1        50G   20G   28G  42% /
+# /dev/sda2        30G   10G   18G  36% /home
+```
+
+**Example 2: Display Specific File System**
+```
+# Display disk space usage for /home
+df -h /home
+
+# Output (example)
+# Filesystem      Size  Used Avail Use% Mounted on
+# /dev/sda2        30G   10G   18G  36% /home
+
+```
+
+### 6. `du` Command
+
+The `du` command estimates file space usage. It can display the size of a directory and its contents, showing both the total size and the size of individual files or subdirectories.
+
+#### Basic Syntax
+`du [OPTIONS] [FILE]`
+
+#### Examples
+
+**Example 1: Display Directory Size**
+```
+# Display disk space usage for /home
+df -h /home
+
+# Output (example)
+# Filesystem      Size  Used Avail Use% Mounted on
+# /dev/sda2        30G   10G   18G  36% /home
+```
+
+**Example 2: Display Size of Files and Subdirectories**
+
+sh
+
+Copy code
+
+```
+# Show the size of each file and subdirectory in the /home/user directory
+du -h /home/user
+
+# Output (example)
+# 100M    /home/user/Documents
+# 200M    /home/user/Downloads
+# 500M    /home/user
+```
+
+These commands are essential for system administration, file management, and security. They allow you to navigate the filesystem, manage permissions, monitor disk usage, and more.
