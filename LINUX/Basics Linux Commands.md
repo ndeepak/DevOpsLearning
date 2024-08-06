@@ -366,3 +366,325 @@ du -h /home/user
 ```
 
 These commands are essential for system administration, file management, and security. They allow you to navigate the filesystem, manage permissions, monitor disk usage, and more.
+
+
+
+---
+
+
+commands, explaining their usage with code examples and practical use cases.
+
+### 1. `top` Command
+
+The `top` command provides a dynamic, real-time view of system processes. It shows a summary of system information, including CPU and memory usage, and lists all running processes.
+
+#### Basic Syntax
+`top [OPTIONS]`
+
+#### Examples
+
+**Example 1: Basic Usage
+```
+# Start top and display running processes
+top
+
+# Output (example)
+# PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
+# 1234 user 20 0 1234M 234M 112M S 5.0 1.5 1:23.45 process_name
+
+```
+
+**Example 2: Sort by Memory Usage
+```
+# Start top and sort processes by memory usage
+top -o %MEM
+```
+
+### 2. `htop` Command
+
+`htop` is an interactive process viewer similar to `top`, but with a more user-friendly and colorful interface. It provides an overview of system resource usage and allows for easier process management.
+
+#### Basic Syntax
+`htop [OPTIONS]`
+
+#### Examples
+
+**Example 1: Start `htop
+```
+# Start htop and display running processes
+htop
+
+```
+
+**Example 2: Filter Processes
+`# In htop, press F3 and type the process name to filter processes`
+
+### 3. `ps` Command
+
+The `ps` command reports a snapshot of current processes. It provides information about the processes running on the system, including their process ID (PID), terminal associated with the process, and CPU time used.
+
+#### Basic Syntax
+`ps [OPTIONS]`
+
+#### Examples
+
+**Example 1: List All Processes
+```
+# Display all running processes
+ps aux
+
+# Output (example)
+# USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+# root         1  0.0  0.1  22568  1308 ?        Ss   12:00   0:01 init
+```
+
+**Example 2: List Processes by User
+```
+# List all processes owned by a specific user
+ps -u username
+```
+
+### 4. `uname` Command
+
+The `uname` command prints system information, such as the operating system name, kernel version, and hardware architecture.
+
+#### Basic Syntax
+`uname [OPTIONS]`
+
+#### Examples
+
+**Example 1: Display All System Information**
+```
+# Show all system information
+uname -a
+
+# Output (example)
+# Linux hostname 5.4.0-66-generic #74-Ubuntu SMP Thu Jan 28 22:54:38 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+**Example 2: Display Kernel Version
+```
+# Show the kernel version
+uname -r
+
+# Output (example)
+# 5.4.0-66-generic
+```
+
+### 5. `hostname` Command
+
+The `hostname` command displays or sets the system's hostname.
+
+#### Basic Syntax
+`hostname [OPTIONS] [NEW_HOSTNAME]`
+
+#### Examples
+
+**Example 1: Display Current Hostname
+```
+# Show the current hostname
+hostname
+
+# Output (example)
+# my-computer
+```
+
+**Example 2: Set a New Hostname (requires sudo)**
+
+```
+# Set a new hostname
+sudo hostname new-hostname
+```
+
+### 6. `time` Command
+
+The `time` command measures the duration of command execution. It displays the total time taken for a command to execute, including real, user, and system time.
+
+#### Basic Syntax
+`time COMMAND`
+
+#### Examples
+
+**Example 1: Measure Command Execution Time**
+```
+# Measure the time taken to list all files
+time ls -lR /path/to/directory
+
+# Output (example)
+# real    0m0.042s
+# user    0m0.035s
+# sys     0m0.007s
+```
+
+### 7. `systemctl` Command
+
+The `systemctl` command is used to control the systemd system and service manager. It can start, stop, restart, enable, and disable services.
+
+#### Basic Syntax
+`systemctl [OPTIONS] COMMAND [SERVICE_NAME]`
+
+#### Examples
+
+**Example 1: Start a Service
+```
+# Start the apache2 service
+sudo systemctl start apache2
+```
+
+**Example 2: Check the Status of a Service
+```
+# Check the status of the apache2 service
+sudo systemctl status apache2
+
+# Output (example)
+# ● apache2.service - The Apache HTTP Server
+#    Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+#    Active: active (running) since Wed 2021-03-24 12:34:56 UTC; 5min ago
+```
+
+### 8. `watch` Command
+
+The `watch` command runs a program periodically, displaying the output in the terminal. It's useful for monitoring the output of commands over time.
+
+#### Basic Syntax
+`watch [OPTIONS] COMMAND`
+
+#### Examples
+
+**Example 1: Monitor Disk Usage
+```
+# Monitor disk usage every 2 seconds
+watch -n 2 df -h
+
+# Output (example, updated every 2 seconds)
+# Filesystem      Size  Used Avail Use% Mounted on
+# /dev/sda1        50G   20G   28G  42% /
+```
+
+**Example 2: Monitor the Status of a Service
+```
+# Monitor the status of apache2 every 5 seconds
+watch -n 5 systemctl status apache2
+```
+
+### 9. `jobs` Command
+
+The `jobs` command displays the status of jobs started in the current shell session. A job can be a process or a command that's running in the background.
+
+#### Basic Syntax
+`jobs [OPTIONS]`
+
+#### Examples
+
+**Example 1: List Background Jobs**
+```
+# Display a list of jobs running in the background
+jobs
+
+# Output (example)
+# [1]+  Running                 ping google.com &
+# [2]-  Stopped                 nano file.txt
+```
+
+**Example 2: Bring a Job to the Foreground**
+```
+# Bring the first job to the foreground
+fg %1
+```
+
+### 10. `kill` Command
+
+The `kill` command sends a signal to a process, typically to terminate it. The default signal is `SIGTERM` (15), but other signals can be specified.
+
+#### Basic Syntax
+`kill [OPTIONS] PID`
+
+#### Examples
+
+**Example 1: Terminate a Process**
+```
+# Terminate a process with PID 1234
+kill 1234
+```
+
+**Example 2: Forcefully Terminate a Process
+```
+# Forcefully terminate a process with PID 1234
+kill -9 1234
+
+```
+
+### 11. `shutdown` Command
+
+The `shutdown` command is used to turn off or reboot the system. It can schedule a shutdown for a specific time or perform an immediate shutdown.
+
+#### Basic Syntax
+`shutdown [OPTIONS] [TIME] [MESSAGE]`
+
+#### Examples
+
+**Example 1: Shutdown Immediately
+```
+# Shutdown the system immediately
+sudo shutdown now
+```
+
+**Example 2: Reboot the System
+```
+# Reboot the system
+sudo shutdown -r now
+```
+
+### 12. `ping` Command
+
+The `ping` command checks the network connectivity to a host. It sends ICMP Echo Request packets to the destination and waits for a response, showing the round-trip time.
+
+#### Basic Syntax
+`ping [OPTIONS] DESTINATION`
+
+#### Examples
+
+**Example 1: Ping a Host
+```
+# Ping google.com and display results
+ping google.com
+
+# Output (example)
+# PING google.com (172.217.9.206): 56 data bytes
+# 64 bytes from 172.217.9.206: icmp_seq=0 ttl=54 time=12.3 ms
+```
+
+### 13. `wget` Command
+
+The `wget` command downloads files from the internet. It supports HTTP, HTTPS, and FTP protocols and can download files non-interactively in the background.
+
+#### Basic Syntax
+`wget [OPTIONS] URL`
+
+#### Examples
+
+**Example 1: Download a File**
+```
+# Download a file from the internet
+wget https://example.com/file.zip
+
+# Output (example)
+# --2021-08-07 12:34:56--  https://example.com/file.zip
+# Resolving example.com (example.com)... 93.184.216.34
+# Connecting to example.com (example.com)|93.184.216.34|:443... connected.
+# HTTP request sent, awaiting response... 200 OK
+# Length: 12345 (12K) [application/zip]
+# Saving to: ‘file.zip’
+```
+
+**Example 2: Download a File in the Background**
+
+```
+# Download a file in the background
+wget -b https://example.com/file.zip
+
+# Output (example)
+# Continuing in background, pid 1234.
+# Output will be written to ‘
+
+```
