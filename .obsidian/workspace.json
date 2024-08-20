@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "450bc6a6752b33b2",
+        "id": "71133249a50e048e",
         "type": "tabs",
         "children": [
           {
-            "id": "3103301fb779b1dd",
+            "id": "591092b6eb2e8ef8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAVEN/HL_Maven_DevOps_Doc.md",
+                "file": "DOCKER/Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "17c81de06def6147",
+            "id": "b1b60398dd544b02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/IORedirection.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/IORedirection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/IORedirection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md"
+                "file": "BASHSCRIPTING/IORedirection.md"
               }
             }
           }
@@ -159,28 +159,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17c81de06def6147",
+  "active": "b1b60398dd544b02",
   "lastOpenFiles": [
-    "MAVEN/HL_Maven_DevOps_Doc.md",
-    "MAVEN/RAW Notes on Maven.md",
-    "MAVEN/ANT vs MAVEN.md",
-    "MAVEN/MAVEN BY EXAMPLE.pdf",
-    "MAVEN/MAVEN_Interview_Questions.md",
-    "GIT/Summary_ RAW.md",
-    "GIT/Git-Github-Class-Notes.md",
-    "README.md",
-    "MAVEN/Interview_Qns",
-    "MAVEN/maven by example.pdf",
-    "MAVEN/HL_Maven_DevOps_Doc",
-    "MAVEN/antVsmaven",
-    "MAVEN",
-    "3.Maven/maven by example.pdf",
-    "3.Maven/Interview_Qns",
-    "3.Maven/HL_Maven_DevOps_Doc",
-    "3.Maven/antVsmaven",
-    "GIT/Git_Interview_Qns.md",
+    "BASHSCRIPTING/001LearningStructure.md",
+    "GITLAB/GIT_STRATEGY in GitLab CICD.md",
+    "BASHSCRIPTING/IORedirection.md",
+    "BASHSCRIPTING/ArithmeticCalculations.md",
+    "BASHSCRIPTING/004CommandLineArguments.md",
+    "BASHSCRIPTING/003VariablesStringsArrays.md",
+    "BASHSCRIPTING/002Introduction.md",
+    "Pasted image 20240722112704.png",
+    "LINUX/Initial Setting Up RHEL.md",
     "GIT/Git VS SVN.md",
-    "First Git/Misc-Tags.Stashing-concepts.md",
-    "First Git/Git_Github_Class_Notes.md"
+    "GIT/Git-Github-Class-Notes.md",
+    "GIT/Merge Conflicts in Git.md",
+    "GITLAB/Setting Up SSL for GitLab with a Self-Signed Certificate.md",
+    "GITLAB/Setting up GITLAB with Self-Signed SSL Certificate.md",
+    "DOCKER/DockerSocket.md",
+    "DOCKER/DockerImagesBuild.md",
+    "DOCKER/DockerCompose.md",
+    "CAP.md",
+    "LINUX/Basics Java Hello World.md",
+    "LINUX/OfficeTrainingTimeline.md",
+    "MAVEN/HelloWorld Maven.md",
+    "DOCKER/Docker.md",
+    "DOCKER/Docker_Top_Stats_Inspect.md",
+    "Pasted image 20240816114024.png",
+    "Pasted image 20240816113758.png",
+    "DOCKER/DockerfilesIntro.md",
+    "Pasted image 20240815103723.png",
+    "BASHSCRIPTING",
+    "LINUX/Cut diff tee.md",
+    "LINUX/Basic Linux Commands Updated.md",
+    "LINUX/Awk and Sed.md",
+    "ZABBIX",
+    "MAVEN/MAVEN BY EXAMPLE.pdf",
+    "LINUX/motd.sh",
+    "GITLAB",
+    "First Git",
+    "GIT/temp/new.txt",
+    "GIT/temp",
+    "GIT/New folder",
+    "JENKINS"
   ]
 }
