@@ -44,8 +44,8 @@
     - [x]  Perform string concatenation.
     - [x]  Practice string substitution and extraction.
 5. **Command-line Arguments**
-    - [ ]  Handle positional parameters.
-    - [ ]  Practice using arguments in scripts.
+    - [x]  Handle positional parameters.
+    - [x]  Practice using arguments in scripts.
 6. **Arrays**
     - [x]  Declare and initialize arrays.
     - [x]  Access and manipulate array elements.
