@@ -32,23 +32,23 @@
 
 ### **Checklist for Each Topic**
 1. **Introduction and Setup**
-    - [x]  Understand the role of Bash in Linux.
-    - [x]  Set up a workspace and necessary tools.
+    - [ ]  Understand the role of Bash in Linux.
+    - [ ]  Set up a workspace and necessary tools.
 2. **Basics of Shell**
-    - [x]  Learn shell environment basics.
-    - [x]  Practice navigation and file management commands.
+    - [ ]  Learn shell environment basics.
+    - [ ]  Practice navigation and file management commands.
 3. **Variables**
-    - [x]  Declare variables and practice usage.
-    - [x]  Explore different types of variables (local, global).
+    - [ ]  Declare variables and practice usage.
+    - [ ]  Explore different types of variables (local, global).
 4. **Strings**
-    - [x]  Perform string concatenation.
-    - [x]  Practice string substitution and extraction.
+    - [ ]  Perform string concatenation.
+    - [ ]  Practice string substitution and extraction.
 5. **Command-line Arguments**
-    - [x]  Handle positional parameters.
-    - [x]  Practice using arguments in scripts.
+    - [ ]  Handle positional parameters.
+    - [ ]  Practice using arguments in scripts.
 6. **Arrays**
-    - [x]  Declare and initialize arrays.
-    - [x]  Access and manipulate array elements.
+    - [ ]  Declare and initialize arrays.
+    - [ ]  Access and manipulate array elements.
 7. **Colors in Bash**
     - [ ]  Learn ANSI color codes.
     - [ ]  Practice adding colors to script outputs.

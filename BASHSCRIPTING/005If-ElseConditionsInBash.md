@@ -19,9 +19,7 @@ fi
 - **`elif`**: (Optional) Checks another condition if the previous one was false.
 - **`else`**: (Optional) Executes code if none of the conditions are true.
 - **`fi`**: Ends the conditional block.
-
 ---
-
 #### **2. Mathematical Comparisons**
 Bash allows you to perform mathematical comparisons within if-else statements. These comparisons are commonly used to evaluate numeric expressions.
 ##### **Comparison Operators:**
