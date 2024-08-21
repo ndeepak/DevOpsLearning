@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "591092b6eb2e8ef8",
+            "id": "f9aa7a5554d4b025",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,19 +20,36 @@
             }
           },
           {
-            "id": "b1b60398dd544b02",
+            "id": "4a99b20d9423c5ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BASHSCRIPTING/IORedirection.md",
+                "file": "BASHSCRIPTING/004CommandLineArguments.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "6f754ca0ec54f414",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32e268931fae0850",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BASHSCRIPTING/001LearningStructure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BASHSCRIPTING/IORedirection.md",
+                "file": "DOCKER/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BASHSCRIPTING/IORedirection.md",
+                "file": "DOCKER/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BASHSCRIPTING/IORedirection.md"
+                "file": "DOCKER/Docker.md"
               }
             }
           }
@@ -159,14 +176,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b1b60398dd544b02",
+  "active": "96fbc51ca5b73942",
   "lastOpenFiles": [
+    "Aliases Configuration.md",
+    "BASHSCRIPTING/005UntilLoop.md",
+    "BASHSCRIPTING/005ForLoopInBash.md",
+    "BASHSCRIPTING/005FunctionsInBash.md",
+    "BASHSCRIPTING/006ExitStatus.md",
     "BASHSCRIPTING/001LearningStructure.md",
-    "GITLAB/GIT_STRATEGY in GitLab CICD.md",
-    "BASHSCRIPTING/IORedirection.md",
-    "BASHSCRIPTING/ArithmeticCalculations.md",
     "BASHSCRIPTING/004CommandLineArguments.md",
-    "BASHSCRIPTING/003VariablesStringsArrays.md",
+    "LINUX/Aliases Configuration.md",
+    "BASHSCRIPTING/CaseStatementsInBash.md",
+    "BASHSCRIPTING/005WhileLoopInBash.md",
+    "BASHSCRIPTING/005If-ElseConditionsInBash.md",
+    "BASHSCRIPTING/006ArithmeticCalculations.md",
+    "BASHSCRIPTING/006IORedirection.md",
+    "BASHSCRIPTING/004VariablesStringsArrays.md",
+    "GITLAB/GIT_STRATEGY in GitLab CICD.md",
     "BASHSCRIPTING/002Introduction.md",
     "Pasted image 20240722112704.png",
     "LINUX/Initial Setting Up RHEL.md",
@@ -179,19 +205,10 @@
     "DOCKER/DockerImagesBuild.md",
     "DOCKER/DockerCompose.md",
     "CAP.md",
-    "LINUX/Basics Java Hello World.md",
-    "LINUX/OfficeTrainingTimeline.md",
-    "MAVEN/HelloWorld Maven.md",
-    "DOCKER/Docker.md",
-    "DOCKER/Docker_Top_Stats_Inspect.md",
     "Pasted image 20240816114024.png",
     "Pasted image 20240816113758.png",
-    "DOCKER/DockerfilesIntro.md",
     "Pasted image 20240815103723.png",
     "BASHSCRIPTING",
-    "LINUX/Cut diff tee.md",
-    "LINUX/Basic Linux Commands Updated.md",
-    "LINUX/Awk and Sed.md",
     "ZABBIX",
     "MAVEN/MAVEN BY EXAMPLE.pdf",
     "LINUX/motd.sh",
