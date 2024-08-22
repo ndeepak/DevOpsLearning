@@ -13,37 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCKER/Docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a99b20d9423c5ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BASHSCRIPTING/004CommandLineArguments.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6f754ca0ec54f414",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "32e268931fae0850",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BASHSCRIPTING/001LearningStructure.md",
+                "file": "Colors.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DOCKER/Docker.md",
+                "file": "Colors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DOCKER/Docker.md",
+                "file": "Colors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCKER/Docker.md"
+                "file": "Colors.md"
               }
             }
           }
@@ -176,38 +146,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96fbc51ca5b73942",
+  "active": "f9aa7a5554d4b025",
   "lastOpenFiles": [
-    "Aliases Configuration.md",
-    "BASHSCRIPTING/005UntilLoop.md",
-    "BASHSCRIPTING/005ForLoopInBash.md",
-    "BASHSCRIPTING/005FunctionsInBash.md",
-    "BASHSCRIPTING/006ExitStatus.md",
-    "BASHSCRIPTING/001LearningStructure.md",
-    "BASHSCRIPTING/004CommandLineArguments.md",
-    "LINUX/Aliases Configuration.md",
-    "BASHSCRIPTING/CaseStatementsInBash.md",
     "BASHSCRIPTING/005WhileLoopInBash.md",
-    "BASHSCRIPTING/005If-ElseConditionsInBash.md",
-    "BASHSCRIPTING/006ArithmeticCalculations.md",
-    "BASHSCRIPTING/006IORedirection.md",
-    "BASHSCRIPTING/004VariablesStringsArrays.md",
-    "GITLAB/GIT_STRATEGY in GitLab CICD.md",
-    "BASHSCRIPTING/002Introduction.md",
-    "Pasted image 20240722112704.png",
-    "LINUX/Initial Setting Up RHEL.md",
-    "GIT/Git VS SVN.md",
-    "GIT/Git-Github-Class-Notes.md",
-    "GIT/Merge Conflicts in Git.md",
-    "GITLAB/Setting Up SSL for GitLab with a Self-Signed Certificate.md",
-    "GITLAB/Setting up GITLAB with Self-Signed SSL Certificate.md",
-    "DOCKER/DockerSocket.md",
-    "DOCKER/DockerImagesBuild.md",
+    "Colors.md",
+    "BASHSCRIPTING/006ExitStatus.md",
+    "BASHSCRIPTING/CaseStatementsInBash.md",
     "DOCKER/DockerCompose.md",
-    "CAP.md",
     "Pasted image 20240816114024.png",
     "Pasted image 20240816113758.png",
     "Pasted image 20240815103723.png",
+    "Pasted image 20240722112704.png",
+    "LINUX/OfficeTrainingTimeline.md",
+    "LINUX/Basics Java Hello World.md",
+    "LINUX/Aliases Configuration.md",
+    "JENKINS/Jenkins Install in Docker.md",
+    "JENKINS/Jenkins Basics.md",
+    "JENKINS",
+    "Document.md",
+    "DOCKER/Docker.md",
+    "CAP.md",
+    "BASHSCRIPTING/006IORedirection.md",
+    "BASHSCRIPTING/006ArithmeticCalculations.md",
+    "BASHSCRIPTING/005UntilLoop.md",
+    "BASHSCRIPTING/005If-ElseConditionsInBash.md",
+    "BASHSCRIPTING/005FunctionsInBash.md",
+    "BASHSCRIPTING/005ForLoopInBash.md",
+    "BASHSCRIPTING/004VariablesStringsArrays.md",
+    "BASHSCRIPTING/004CommandLineArguments.md",
+    "BASHSCRIPTING/002Introduction.md",
+    "BASHSCRIPTING/001LearningStructure.md",
+    "Aliases Configuration.md",
+    "DOCKER/Docker_Top_Stats_Inspect.md",
+    "MAVEN/HelloWorld Maven.md",
     "BASHSCRIPTING",
     "ZABBIX",
     "MAVEN/MAVEN BY EXAMPLE.pdf",
@@ -216,7 +187,6 @@
     "First Git",
     "GIT/temp/new.txt",
     "GIT/temp",
-    "GIT/New folder",
-    "JENKINS"
+    "GIT/New folder"
   ]
 }
