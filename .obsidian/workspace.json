@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "450bc6a6752b33b2",
+        "id": "71133249a50e048e",
         "type": "tabs",
         "children": [
           {
-            "id": "3103301fb779b1dd",
+            "id": "f9aa7a5554d4b025",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAVEN/HL_Maven_DevOps_Doc.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "17c81de06def6147",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/Colors.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/Colors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md",
+                "file": "BASHSCRIPTING/Colors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MAVEN/RAW Notes on Maven.md"
+                "file": "BASHSCRIPTING/Colors.md"
               }
             }
           }
@@ -159,28 +146,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17c81de06def6147",
+  "active": "96fbc51ca5b73942",
   "lastOpenFiles": [
-    "MAVEN/HL_Maven_DevOps_Doc.md",
-    "MAVEN/RAW Notes on Maven.md",
-    "MAVEN/ANT vs MAVEN.md",
+    "BASHSCRIPTING/005WhileLoopInBash.md",
+    "BASHSCRIPTING/Colors.md",
+    "BASHSCRIPTING/006ExitStatus.md",
+    "BASHSCRIPTING/CaseStatementsInBash.md",
+    "DOCKER/DockerCompose.md",
+    "Pasted image 20240816114024.png",
+    "Pasted image 20240816113758.png",
+    "Pasted image 20240815103723.png",
+    "Pasted image 20240722112704.png",
+    "LINUX/OfficeTrainingTimeline.md",
+    "LINUX/Basics Java Hello World.md",
+    "LINUX/Aliases Configuration.md",
+    "JENKINS/Jenkins Install in Docker.md",
+    "JENKINS/Jenkins Basics.md",
+    "JENKINS",
+    "Document.md",
+    "DOCKER/Docker.md",
+    "CAP.md",
+    "BASHSCRIPTING/006IORedirection.md",
+    "BASHSCRIPTING/006ArithmeticCalculations.md",
+    "BASHSCRIPTING/005UntilLoop.md",
+    "BASHSCRIPTING/005If-ElseConditionsInBash.md",
+    "BASHSCRIPTING/005FunctionsInBash.md",
+    "BASHSCRIPTING/005ForLoopInBash.md",
+    "BASHSCRIPTING/004VariablesStringsArrays.md",
+    "BASHSCRIPTING/004CommandLineArguments.md",
+    "BASHSCRIPTING/002Introduction.md",
+    "BASHSCRIPTING/001LearningStructure.md",
+    "Aliases Configuration.md",
+    "DOCKER/Docker_Top_Stats_Inspect.md",
+    "MAVEN/HelloWorld Maven.md",
+    "BASHSCRIPTING",
+    "ZABBIX",
     "MAVEN/MAVEN BY EXAMPLE.pdf",
-    "MAVEN/MAVEN_Interview_Questions.md",
-    "GIT/Summary_ RAW.md",
-    "GIT/Git-Github-Class-Notes.md",
-    "README.md",
-    "MAVEN/Interview_Qns",
-    "MAVEN/maven by example.pdf",
-    "MAVEN/HL_Maven_DevOps_Doc",
-    "MAVEN/antVsmaven",
-    "MAVEN",
-    "3.Maven/maven by example.pdf",
-    "3.Maven/Interview_Qns",
-    "3.Maven/HL_Maven_DevOps_Doc",
-    "3.Maven/antVsmaven",
-    "GIT/Git_Interview_Qns.md",
-    "GIT/Git VS SVN.md",
-    "First Git/Misc-Tags.Stashing-concepts.md",
-    "First Git/Git_Github_Class_Notes.md"
+    "LINUX/motd.sh",
+    "GITLAB",
+    "First Git",
+    "GIT/temp/new.txt",
+    "GIT/temp",
+    "GIT/New folder"
   ]
 }
