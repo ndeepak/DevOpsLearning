@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f9aa7a5554d4b025",
+            "id": "ad25d65fc0779899",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BASHSCRIPTING/Colors.md",
+                "file": "GIT/Git-Github-Class-Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BASHSCRIPTING/Colors.md",
+                "file": "GIT/Git-Github-Class-Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BASHSCRIPTING/Colors.md",
+                "file": "GIT/Git-Github-Class-Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BASHSCRIPTING/Colors.md"
+                "file": "GIT/Git-Github-Class-Notes.md"
               }
             }
           }
@@ -146,47 +146,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96fbc51ca5b73942",
+  "active": "ad25d65fc0779899",
   "lastOpenFiles": [
-    "BASHSCRIPTING/005WhileLoopInBash.md",
-    "BASHSCRIPTING/Colors.md",
-    "BASHSCRIPTING/006ExitStatus.md",
-    "BASHSCRIPTING/CaseStatementsInBash.md",
-    "DOCKER/DockerCompose.md",
+    "Pasted image 20240722112704.png",
+    "CAP.md",
+    "GIT/Github With SSH.md",
+    "GIT/Git-Github-Class-Notes.md",
+    "ZABBIX/Zabbix Overview.md",
+    "ZABBIX/Installing Zabbix in Ubuntu Docker.md",
+    "ZABBIX/Installing Zabbix in RHEL 8.md",
+    "ZABBIX",
     "Pasted image 20240816114024.png",
     "Pasted image 20240816113758.png",
     "Pasted image 20240815103723.png",
-    "Pasted image 20240722112704.png",
-    "LINUX/OfficeTrainingTimeline.md",
-    "LINUX/Basics Java Hello World.md",
-    "LINUX/Aliases Configuration.md",
-    "JENKINS/Jenkins Install in Docker.md",
-    "JENKINS/Jenkins Basics.md",
-    "JENKINS",
-    "Document.md",
-    "DOCKER/Docker.md",
-    "CAP.md",
-    "BASHSCRIPTING/006IORedirection.md",
-    "BASHSCRIPTING/006ArithmeticCalculations.md",
-    "BASHSCRIPTING/005UntilLoop.md",
-    "BASHSCRIPTING/005If-ElseConditionsInBash.md",
-    "BASHSCRIPTING/005FunctionsInBash.md",
-    "BASHSCRIPTING/005ForLoopInBash.md",
-    "BASHSCRIPTING/004VariablesStringsArrays.md",
-    "BASHSCRIPTING/004CommandLineArguments.md",
-    "BASHSCRIPTING/002Introduction.md",
-    "BASHSCRIPTING/001LearningStructure.md",
-    "Aliases Configuration.md",
-    "DOCKER/Docker_Top_Stats_Inspect.md",
-    "MAVEN/HelloWorld Maven.md",
-    "BASHSCRIPTING",
-    "ZABBIX",
+    "MAVEN/RAW Notes on Maven.md",
+    "MAVEN/Maven Notes.md",
+    "MAVEN/MAVEN_Interview_Questions.md",
     "MAVEN/MAVEN BY EXAMPLE.pdf",
+    "MAVEN/HelloWorld Maven.md",
+    "MAVEN/HL_Maven_DevOps_Doc.md",
+    "MAVEN/Hello World ANT.md",
+    "MAVEN/ANT vs MAVEN.md",
+    "MAVEN",
     "LINUX/motd.sh",
+    "LINUX/Setting Up a Local Repository in RHEL 9 Using a Mounted CD-ROM Image.md",
+    "LINUX/Setting Up a Local RHEL Repository Using HTTPD Server.md",
+    "LINUX/OfficeTrainingTimeline.md",
+    "LINUX/Installing JDK-22 on Ubuntu.md",
+    "LINUX/Initial Setting Up RHEL.md",
+    "LINUX/Cut diff tee.md",
+    "LINUX/Configuring SSH access between Windows or other machine and RHEL.md",
+    "LINUX/Basics Linux Commands.md",
+    "LINUX/Basics Java Hello World.md",
+    "LINUX/Basic Linux Commands Updated.md",
+    "LINUX/Awk and Sed.md",
+    "LINUX/Assignment 1  Day 2.md",
+    "LINUX",
+    "JENKINS",
     "GITLAB",
+    "DOCKER",
     "First Git",
-    "GIT/temp/new.txt",
-    "GIT/temp",
-    "GIT/New folder"
+    "BASHSCRIPTING/Project01/quotes.txt"
   ]
 }
