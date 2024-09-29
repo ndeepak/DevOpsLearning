@@ -84,7 +84,7 @@ chmod 600 ~/.ssh/authorized_keys
 - **SELinux Configuration:** If SELinux is enabled, ensure it allows SSH.
     `sudo setsebool -P ssh_sysadm_login 1`    
 - **Permission Issues:** Ensure the correct permissions for `.ssh` directory and files.
-    `chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys`
+    `chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys`
 - **Logging and Monitoring:** Monitor SSH logs for any connection issues.
     `sudo tail -f /var/log/secure`
 
