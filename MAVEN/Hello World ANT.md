@@ -116,8 +116,6 @@ public class HelloWorld {
 4. **Clean the Project (optional):**
     `ant clean`
     This will delete the `build` directory and all the compiled files.
-    
-
 ### Summary
 
 You've successfully created a simple Java project using Apache Ant in WSL Ubuntu on Windows 10. You compiled and ran the project, which prints "Hello, World!" to the console.

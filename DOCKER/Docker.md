@@ -487,7 +487,9 @@ Can you explain how you have implememnted Docker for your application?
 7. Launch the gamutkart application from all containers.
 	$ http://IP:8080/gamutkart
 
---7pm-daily-batch--
+---
+
+7pm-daily-batch
 
 #
 Docker and Jenkins Integration
@@ -499,7 +501,7 @@ Docker and Jenkins Integration
                 - docker build -t "nageshvkn/gamutkart-img" . (Note: don't forget "." at the                                                                                      end)
                 - ./create-env.sh 10
 
-----------
+
 1. How to download image from private repo
 2. 
 
