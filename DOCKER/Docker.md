@@ -265,7 +265,7 @@ Create a container in the background without terminal access:
     2. **Docker Build**: Use a Dockerfile to specify image contents and build steps.
 ---
 ---
-### Creating Docker Image using `docker commit` Command
+### Creating Docker Image using `docker commit` Command (Not Preferable)
 #### Project-1: Creating an Nginx Docker Image with Application Code
 ##### Step-by-Step Process:
 1. **Create a Container**
@@ -278,7 +278,7 @@ Create a container in the background without terminal access:
 3. **Deploy Application Code**    
     - Place the following content into `/var/www/html/index.html` within the container: 
 `<html>`
-    `<body>`
+    `<body>` 
         `<h1 style="color:red;">Ndeepak</h1>`
     `</body>`
 `</html>`
@@ -288,7 +288,7 @@ Create a container in the background without terminal access:
     - Syntax:
     `$ docker commit <container-name> <image-name>`
 5. **Verify Image Creation**
-    `$ docker image ls`    
+    `$ docker image ls`     
 6. **Push Image to Docker Hub**
     - Login to Docker Hub (if not logged in):        
         `$ docker login`
@@ -315,10 +315,8 @@ Create a container in the background without terminal access:
     Example:
     `$ docker pause <container-name>`
 ---
-PROJECT-2:
-=============
-DAY-6:
-# Creating docker image using "docker build" command
+
+Project 2 # Creating docker image using "docker build" command
 =================
 	- mkdir gamutgurus
 	- cd gamutgurus
@@ -340,10 +338,11 @@ index.html:
 =======
 <html>
    <body style="background-color:powderblue;">
-     <h1 style="color:red;">Gamug Gurus Online Training Portal</h1>
+     <h1 style="color:red;">Online Training Portal</h1>
 	</body> 
 </html>
- 	
+
+---
 # Building docker image:
 	$ cd gamutgurus
 	$ docker build -t "nageshvkn/nginx-img" .

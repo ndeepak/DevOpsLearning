@@ -19,16 +19,15 @@ echo "Hello from my custom image!" > /var/www/html/index.html
 ```
 3. **Commit the Container to an Image:** Once you’re satisfied with the changes, commit the container to a new image:
     `docker commit <container_id> my_custom_image`
-    
     Replace `<container_id>` with the actual ID or name of the container. This creates an image named `my_custom_image` with all the changes made in the container.
-    
+
 4. **Verify the New Image:** You can list and verify the new image using:
     `docker images`
-    
+
 5. **Run a Container from the New Image:** To test the newly created image, run a container from it:    
     `docker run -d -p 80:80 my_custom_image`
-    
-    This command runs the container in the background, exposing port 80.
+
+This command runs the container in the background, exposing port 80.
 
 
 #### **Advantages of Docker Commit:**
@@ -68,8 +67,8 @@ EXPOSE 80
 # Start Nginx service
 CMD ["nginx", "-g", "daemon off;"]
 ```
-    In this example:
-    
+
+In this example:
     - **FROM** specifies the base image as the latest version of Ubuntu.
     - **RUN** updates the package list and installs Nginx.
     - **COPY** copies a custom `index.html` file to the container.
