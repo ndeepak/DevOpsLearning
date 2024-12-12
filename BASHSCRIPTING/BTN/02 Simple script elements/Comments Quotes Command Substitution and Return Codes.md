@@ -1,4 +1,4 @@
-#### **1. Comments in Bash**
+ #### **1. Comments in Bash**
 - Comments are used to include explanations or notes within the script and are ignored during execution.
 **Single-line Comment**:
 `# This is a single-line comment `
