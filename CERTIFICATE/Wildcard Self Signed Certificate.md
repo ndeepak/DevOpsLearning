@@ -129,7 +129,7 @@ spec:
 If other servers or clients need to trust this certificate, copy `wildcard.deepaknagarkoti.com.crt` and **add it to their trusted CA store**:
 - **Ubuntu/Debian:**
     `sudo cp wildcard.deepaknagarkoti.com.crt /usr/local/share/ca-certificates/
-   `sudo update-ca-certificates`
+    `sudo update-ca-certificates`
 - **RHEL/CentOS:**
     `sudo cp wildcard.deepaknagarkoti.com.crt /etc/pki/ca-trust/source/anchors/ 
   - `sudo update-ca-trust`
@@ -139,7 +139,5 @@ If other servers or clients need to trust this certificate, copy `wildcard.deepa
 - `app.deepaknagarkoti.com`
 - `api.deepaknagarkoti.com`
 - `dev.deepaknagarkoti.com`
-- **Any subdomain of `deepaknagarkoti.com`** across multiple servers.
+- **Any subdomain of `*.deepaknagarkoti.com`** across multiple servers.
 🚀 You can now use it for **web servers, Kubernetes, Docker, and other services**.
-
-Would you like help in automating this process with a script? 😊

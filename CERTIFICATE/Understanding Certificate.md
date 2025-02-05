@@ -9,7 +9,6 @@ A **digital certificate** is an electronic document used to prove ownership of a
 For example, when you visit `https://google.com`, your browser checks the **SSL certificate** to ensure you are securely connected to Google.
 
 ---
-
 ## **🔹 Types of Digital Certificates**
 ### **1️⃣ SSL/TLS Certificates (For Secure Websites & Servers)**
 Used for encrypting web traffic and ensuring secure connections (`HTTPS`).
@@ -34,7 +33,6 @@ Encrypts and signs emails to prevent phishing and email tampering.
 ✅ **Use case:** Secure email communication for businesses and individuals.
 
 ---
-
 ### **4️⃣ Client Authentication Certificates**
 Used for user authentication instead of passwords.
 ✅ **Use case:** Secure logins for VPNs, internal apps, and corporate systems.
@@ -44,7 +42,6 @@ Used for user authentication instead of passwords.
 - **Root Certificates:** Issued by a **Certificate Authority (CA)** (e.g., DigiCert, Let's Encrypt).
 - **Intermediate Certificates:** Bridge between root CA and end-user certificates.
 ✅ **Use case:** Establish trust between browsers and websites.
-
 ---
 ### **6️⃣ Self-Signed Certificates**
 A certificate that is **not issued by a CA** but created manually for internal use.  
@@ -95,8 +92,8 @@ This creates a **2048-bit RSA private key** named `deepaknagarkoti.key`.
 `openssl req -new -key deepaknagarkoti.key -out deepaknagarkoti.csr`
 You’ll be asked to fill in details:
 - **Common Name (CN):** `*.deepaknagarkoti.com`
-- **Organization Name:** Your Company Name
-- **Country, State, City:** Your location
+- **Organization Name:** Deepak Corp
+- **Country, State, City:** Kathmandu
 ✅ The CSR file (`deepaknagarkoti.csr`) is used to request a certificate from a CA.
 ---
 ### **4️⃣ Generate a Self-Signed Certificate for `*.deepaknagarkoti.com`**
@@ -121,12 +118,11 @@ Edit Apache’s SSL configuration file:
     SSLCertificateFile /etc/ssl/certs/deepaknagarkoti.crt
     SSLCertificateKeyFile /etc/ssl/private/deepaknagarkoti.key
 </VirtualHost>
-```
-
+```W
 Restart Apache:
 `sudo systemctl restart apache2  # Ubuntu   
 `sudo systemctl restart httpd    # RHEL`  
-
+```
 ---
 ### **🔹 Nginx Configuration**
 Edit your Nginx SSL configuration:
@@ -177,5 +173,3 @@ Run the script:
 📌 **Next Steps:**  
 ✅ Do you want to automate certificate renewal?  
 ✅ Need to set up a CA
-
-Let me know, and I’ll guide you further! 🚀😊
