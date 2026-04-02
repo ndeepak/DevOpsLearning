@@ -1,4 +1,4 @@
-# Kubernetes Deployements
+# Kubernetes Deployments
 ## 1. Background: Pods and ReplicaSets
 Before we get to **Deployments**, remember:
 - A **Pod** is the smallest deployable unit in Kubernetes — it runs one or more containers (usually one).    

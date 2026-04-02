@@ -1,5 +1,5 @@
 # Pods with YAML
-
+[[KUBERNETES/KCNA/2 Kubernetes Resources/03 Pods with YAML]]
 YAML in Kubernetes
 
 ```rootlevelproperty
