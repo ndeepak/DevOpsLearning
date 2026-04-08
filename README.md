@@ -15,8 +15,17 @@ This repository is designed to be your ultimate guide to mastering DevOps concep
 6. Zabbix
 7. Jenkins
 8. Bash Scripting
-9. Go
-10. Oracle
+9. Kubernetes
+10. Python
+11. Go
+12. ELK Stack
+13. Certificates
+14. Cyber Notes
+15. Wazuh
+16. Monitoring
+17. Oracle
+18. MCP
+19. NCA Bootcamp
 ---
 ### 1. **Linux**
 Master Linux system administration, a foundational skill for DevOps engineers:
@@ -84,7 +93,66 @@ Understand Oracle database management:
 - Query optimization and user management    
 🔗 [Explore Oracle Notes](./ORACLE)
 
----
+### 11. **Kubernetes**
+Master container orchestration with Kubernetes:
+- Deployments, services, and pods
+- Scaling and load balancing
+- Kubernetes networking and security
+🔗 [Explore Kubernetes Notes](./KUBERNETES)
+
+### 12. **Python**
+Learn Python for DevOps automation:
+- Scripting for system administration
+- Automation tools and libraries
+- Integrating Python with DevOps workflows
+🔗 [Explore Python Notes](./Python)
+
+### 13. **ELK Stack**
+Implement log aggregation and analysis with ELK:
+- Elasticsearch for data indexing
+- Logstash for data processing
+- Kibana for visualization
+🔗 [Explore ELK Stack Notes](./ELK)
+
+### 14. **Certificates**
+Master SSL/TLS certificates and security:
+- Setting up Certificate Authorities
+- SSL configuration for Apache and Nginx
+- Wildcard and self-signed certificates
+🔗 [Explore Certificate Notes](./CERTIFICATE)
+
+### 15. **Cyber Notes**
+Comprehensive cybersecurity and penetration testing notes:
+- File sharing and HTTP servers
+- Netcat for network utilities
+- Security best practices and tools
+🔗 [Explore Cyber Notes](./CyberNotes)
+
+### 16. **Wazuh**
+Learn security monitoring with Wazuh:
+- Intrusion detection and response
+- Compliance monitoring
+- Log analysis and alerting
+🔗 [Explore Wazuh Notes](./WAZUH)
+
+### 17. **Monitoring**
+Explore various monitoring tools and practices:
+- System and application monitoring
+- Alerting and notification systems
+- Performance optimization
+🔗 [Explore Monitoring Notes](./MONITOR)
+
+### 18. **MCP**
+Model Context Protocol and related technologies:
+- MCP implementation and usage
+- Integration with development tools
+🔗 [Explore MCP Notes](./MCP)
+
+### 19. **NCA Bootcamp**
+Bootcamp materials for NCA training:
+- Certification preparation
+- Practical exercises and labs
+🔗 [Explore NCA Bootcamp Notes](./NCA_Bootcamp)
 
 ## 🔧 **How to Use This Repository**
 1. **Clone the repository**:    
@@ -98,31 +166,44 @@ Understand Oracle database management:
 ---
 ## 📂 **Directory Structure**
 ```
-├── BASHSCRIPTING/  # Bash scripting tutorials and examples
-├── CyberNotes/     # Security-focused DevOps notes
-├── DOCKER/         # Docker commands, Dockerfile examples
-├── GIT/            # Git basics and advanced commands
-├── GITLAB/         # GitLab CI/CD configurations
-├── GO/             # Go programming notes
-├── JENKINS/        # Jenkins pipeline configurations
-├── LINUX/          # Linux administration tips and commands
-├── MAVEN/          # Maven project management
-├── ORACLE/         # Oracle database configuration
-├── ZABBIX/         # System monitoring with Zabbix
-├── images/         # Supporting images for notes
-├── README.md       # Project overview and structure
-└── index.html      # Web-based navigation for offline access
+├── BASHSCRIPTING/          # Bash scripting tutorials and examples
+├── CERTIFICATE/            # SSL/TLS certificates and CA setup
+├── CyberNotes/             # Security-focused DevOps notes
+├── DOCKER/                 # Docker commands, Dockerfile examples
+├── ELK/                    # Elasticsearch, Logstash, Kibana stack
+├── GIT/                    # Git basics and advanced commands
+├── GITLAB/                 # GitLab CI/CD configurations
+├── GO/                     # Go programming notes
+├── JENKINS/                # Jenkins pipeline configurations
+├── KUBERNETES/             # Kubernetes orchestration notes
+├── LINUX/                  # Linux administration tips and commands
+├── MAVEN/                  # Maven project management
+├── MCP/                    # Model Context Protocol notes
+├── MONITOR/                # Monitoring tools and practices
+├── NCA_Bootcamp/           # NCA bootcamp materials
+├── ORACLE/                 # Oracle database configuration
+├── Python/                 # Python programming and automation
+├── WAZUH/                  # Wazuh security monitoring
+├── ZABBIX/                 # System monitoring with Zabbix
+├── images/                 # Supporting images for notes
+├── README.md               # Project overview and structure
+└── index.html              # Web-based navigation for offline access
 ```
 
 ---
 ## 🛠️ **Tools & Technologies Covered**
-- Linux (Ubuntu, RHEL, CentOS)    
-- Git and GitLab    
-- Docker and Docker Compose    
-- Jenkins CI/CD    
-- Apache Maven    
-- Zabbix Monitoring    
-- Bash and Shell Scripting  
+- Linux (Ubuntu, RHEL, CentOS)
+- Git and GitLab
+- Docker and Kubernetes
+- Jenkins CI/CD
+- Apache Maven
+- Zabbix and Wazuh Monitoring
+- Bash and Python Scripting
+- Go Programming
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- SSL/TLS Certificates
+- Oracle Database
+- Cybersecurity Tools and Practices
 
 ---
 ## 📢 **Contributions**
