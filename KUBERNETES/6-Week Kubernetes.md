@@ -115,3 +115,4 @@ Since you have **2-3 hours per day**, this timeline is designed for a **balanced
 - Katacoda Kubernetes Labs
 
 ---
+Best of luck
