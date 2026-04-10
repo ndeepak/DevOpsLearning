@@ -1,0 +1,76 @@
+sudo apt update
+sudo apt clean all
+sudo apt autoremove
+sudo apt autoclean
+
+sudo systemctl stop kubelet
+sudo systemctl stop containerd
+
+sudo rm -rf /var/lib/kubelet/*
+sudo rm -rf /etc/kubernetes/
+sudo rm -rf /etc/kubeadm/
+sudo rm -rf /var/lib/etcd/
+sudo rm -rf /etc/systemd/system/kubelet.service.d
+
+
+sudo rm -rf /var/lib/containerd
+sudo systemctl restart containerd
+
+
+
+# remove static pod manifests that caused "already exists" errors
+sudo rm -f /etc/kubernetes/manifests/*.yaml
+
+# remove main kube artifacts (be careful: destructive)
+sudo rm -rf /etc/kubernetes \
+             /var/lib/etcd \
+             /var/lib/kubelet/* \
+             /var/lib/cni \
+             /etc/cni \
+             /opt/cni \
+             /var/run/flannel \
+             /var/lib/containerd/* \
+             /var/lib/docker/*
+
+
+sudo systemctl enable kubelet
+sudo systemctl start kubelet
+# If kubelet enters CrashLoop, stop it for the init step and re-start later:
+sudo systemctl stop kubelet
+
+
+sudo kubeadm reset -f
+
+
+sudo rm -rf /etc/kubernetes/
+sudo rm -rf /var/lib/etcd/
+sudo rm -rf /var/lib/kubelet/
+sudo rm -rf /etc/cni/
+sudo rm -rf /opt/cni/
+sudo rm -rf /var/lib/cni/
+sudo rm -rf /var/run/flannel/
+sudo rm -rf ~/.kube/
+
+
+sudo rm -rf /var/lib/containerd/
+sudo rm -rf /etc/containerd/
+sudo rm -rf /var/lib/docker/
+sudo rm -rf /etc/docker/
+
+sudo systemctl stop kubelet
+
+
+sudo lsof -i :10250
+sudo netstat -tulnp | grep 10250
+sudo kill -9 1234
+sudo systemctl restart containerd
+
+
+POD_CIDR=10.244.0.0/16
+SERVICE_CIDR=10.96.0.0/16
+PRIMARY_IP=192.168.11.140
+
+sudo kubeadm init \
+  --pod-network-cidr=$POD_CIDR \
+  --service-cidr=$SERVICE_CIDR \
+  --apiserver-advertise-address=$PRIMARY_IP
