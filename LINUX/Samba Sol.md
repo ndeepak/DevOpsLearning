@@ -240,3 +240,17 @@ If you still cannot access the share after enabling the registry value, verify t
     ```
 
 For private shares, **do not** enable insecure guest authentication. Instead, create Linux and Samba users, configure `valid users` in `smb.conf`, and authenticate with a username and password.
+
+
+---
+
+Windows 11 blocks insecure SMB guest logons by default, which can prevent access to Samba shares configured with `guest ok = yes`. Microsoft recommends only enabling this in trusted environments, because guest logons weaken SMB security and do not support SMB signing or encryption.[learn.microsoft](https://learn.microsoft.com/en-us/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3)
+
+To allow access, open **Local Group Policy Editor** and go to **Computer Configuration > Administrative Templates > Network > Lanman Workstation > Enable insecure guest logons**, then set it to **Enabled**. Microsoft says the same setting can also be enabled with PowerShell.[learn.microsoft](https://learn.microsoft.com/en-us/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3)
+
+## PowerShell-only cheat sheet
+
+Run PowerShell **as Administrator** and use this command:
+`Set-SmbClientConfiguration -EnableInsecureGuestLogons $true -Force`
+
+Microsoft documents this as the supported PowerShell method for allowing insecure guest logons on Windows 10, Windows 11, and supported Windows Server versions.
