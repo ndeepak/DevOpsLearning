@@ -29,14 +29,14 @@
 
 #### **Common Options**
 
-|Option|Description|
-|---|---|
-|`-a`|Archive mode: Preserves symbolic links, file permissions, timestamps, etc.|
-|`-v`|Verbose: Displays detailed output of the transfer process.|
-|`-z`|Compress: Compresses files during transfer.|
-|`--exclude`|Excludes specific files or directories based on patterns.|
-|`--delete`|Deletes files at the destination that do not exist at the source.|
-|`-e ssh`|Forces rsync to use SSH for remote transfers.|
+| Option      | Description                                                                |
+| ----------- | -------------------------------------------------------------------------- |
+| `-a`        | Archive mode: Preserves symbolic links, file permissions, timestamps, etc. |
+| `-v`        | Verbose: Displays detailed output of the transfer process.                 |
+| `-z`        | Compress: Compresses files during transfer.                                |
+| `--exclude` | Excludes specific files or directories based on patterns.                  |
+| `--delete`  | Deletes files at the destination that do not exist at the source.          |
+| `-e ssh`    | Forces rsync to use SSH for remote transfers.                              |
 
 ---
 
