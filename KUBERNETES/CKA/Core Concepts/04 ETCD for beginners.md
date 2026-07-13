@@ -1,7 +1,7 @@
 # ETCD for beginners
 
 # What is etcd?
-- **etcd** is a **distributed, consistent key-value store** and **Reliable**
+- **etcd** is a **distributed, consistent key-value store** and **Reliable** that is simple, secure and fast.
 - It stores _all cluster data_ — such as Nodes, Pods, ConfigMaps, Secrets, etc.
 - Think of it as the **"database" of your Kubernetes cluster**.
 - It is simple, secure and fast.
@@ -20,13 +20,13 @@ In a Kubernetes control plane:
 ---
 ### Comparing Various types of storing mechanisms
 
-| **Name**            | **Relational DB** | **Document Store** | **Key-Value Store** |
-| ------------------- | ----------------- | ------------------ | ------------------- |
-| **Schema**          | Yes               | No                 | No                  |
-| **Complex Queries** | Yes (SQL)         | Limited (No joins) | No                  |
-| **Performance**     | Good              | Good               | Super Fast          |
-| **Flexibility**     | Rigid             | Flexible           | Very Flexible       |
-| **Best for**        | Structured Data   | Un/Semi-Structured | Simple Fast Lookup  |
+| **Name**            | **Relational DB** | **Document Store**      | **Key-Value Store** |
+| ------------------- | ----------------- | ----------------------- | ------------------- |
+| **Schema**          | Yes (Strict)      | No (Documented in JSON) | No                  |
+| **Complex Queries** | Yes (SQL)         | Limited (No joins)      | No                  |
+| **Performance**     | Good              | Good                    | Super Fast          |
+| **Flexibility**     | Rigid             | Flexible                | Very Flexible       |
+| **Best for**        | Structured Data   | Un/Semi-Structured      | Simple Fast Lookup  |
 
 # 1. Understanding Key-Value Stores
 A **key-value store** is like a simple dictionary:
