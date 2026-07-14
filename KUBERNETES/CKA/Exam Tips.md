@@ -197,3 +197,11 @@ kubectl apply -f <file>.yaml
 ```
 
 This approach saves time and avoids writing manifests from scratch.
+
+
+---
+
+to check scheduler:
+```
+kubectl get pods -n kube-system
+```
