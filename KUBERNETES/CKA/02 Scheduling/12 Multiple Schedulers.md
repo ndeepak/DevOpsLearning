@@ -563,11 +563,8 @@ Without RBAC
 Scheduler cannot
 ```
 Read Pods
-
 Read Nodes
-
 Bind Pods
-
 Create Events
 ```
 
@@ -583,9 +580,7 @@ Scheduler stops functioning.
 That's why
 ```
 ClusterRole
-
 ClusterRoleBinding
-
 ServiceAccount
 ```
 
@@ -595,40 +590,29 @@ are created.
 
 # Part 12. Why ConfigMap?
 Instead of embedding configuration into image
-
 ```
 Image
-
 ↓
-
 Contains scheduler binary only
 ```
 
 Configuration stays outside
-
 ```
 ConfigMap
-
 ↓
 
 Mounted
-
 ↓
 
 /etc/kubernetes/
 ```
 
 Advantages
-
 ```
 Change config
-
 ↓
-
 Restart Pod
-
 ↓
-
 Done
 ```
 
@@ -637,30 +621,21 @@ No rebuilding image.
 ---
 
 # Part 13. Leader Election
-
 Suppose you run
-
 ```
 Scheduler Replica 1
-
 Scheduler Replica 2
-
 Scheduler Replica 3
 ```
 
 If all three schedule Pods
-
 ```
 Pod A
-
 ↓
 
 Node1
-
 Replica1
-
 Replica2
-
 Replica3
 ```
 
@@ -674,25 +649,19 @@ Leader election solves this.
 
 ```
 Replica1
-
 Leader
-
 Schedules Pods
 
 Replica2
-
 Standby
 
 Replica3
-
 Standby
 ```
 
 If leader crashes
-
 ```
 Replica2
-
 ↓
 
 Becomes Leader
@@ -703,7 +672,6 @@ Scheduling continues.
 ---
 
 Leader election uses
-
 ```
 Lease object
 ```
@@ -717,16 +685,13 @@ Everyone else waits.
 ---
 
 # Part 14. Why leaderElect: false?
-
 Example
-
 ```
 leaderElection:
   leaderElect: false
 ```
 
 This means
-
 ```
 Only one replica exists.
 
@@ -734,7 +699,6 @@ No need for election.
 ```
 
 If Deployment
-
 ```
 replicas: 1
 ```
@@ -742,7 +706,6 @@ replicas: 1
 leader election is unnecessary.
 
 If
-
 ```
 replicas: 3
 ```
@@ -752,9 +715,7 @@ leader election should be enabled.
 ---
 
 # Part 15. How Does a Pod Choose Custom Scheduler?
-
 Pod YAML
-
 ```
 apiVersion: v1
 kind: Pod
@@ -773,31 +734,24 @@ Scheduler flow
 
 ```
 API Server
-
 ↓
 
 New Pod
-
 ↓
 
 schedulerName
-
 ↓
 
 my-scheduler
-
 ↓
 
 my-scheduler notices it
-
 ↓
 
 Chooses Node
-
 ↓
 
 Updates spec.nodeName
-
 ↓
 
 kubelet starts container
@@ -806,34 +760,26 @@ kubelet starts container
 ---
 
 # Part 16. What If Scheduler Doesn't Exist?
-
 Example
-
 ```
 schedulerName: abc
 ```
 
 But cluster only has
-
 ```
 default-scheduler
-
 gpu-scheduler
 ```
 
 No scheduler named
-
 ```
 abc
 ```
 
 Result
-
 ```
 Pod
-
 Status
-
 Pending
 ```
 
@@ -842,7 +788,6 @@ Forever.
 Nobody schedules it.
 
 Checking
-
 ```
 kubectl describe pod nginx
 ```
@@ -852,26 +797,20 @@ You'll often see events indicating that no scheduler has processed the Pod, beca
 ---
 
 # Part 17. How Can We Verify Which Scheduler Scheduled a Pod?
-
 Run
-
 ```
 kubectl get events -o wide
 ```
 
 Output
-
 ```
 SOURCE
-
 my-custom-scheduler
 ```
 
 or
-
 ```
 SOURCE
-
 default-scheduler
 ```
 
@@ -880,13 +819,11 @@ This immediately tells you who scheduled it.
 ---
 
 You can also inspect the Pod:
-
 ```
 kubectl describe pod nginx
 ```
 
 Typical event
-
 ```
 Normal  Scheduled
 
@@ -898,10 +835,8 @@ by my-custom-scheduler
 ---
 
 # Part 18. Internal Architecture
-
 Complete flow
-
-```
+```scss
                    kubectl apply
                          |
                          |
@@ -931,7 +866,6 @@ Update spec.nodeName             Update spec.nodeName
 Notice that **all schedulers communicate through the API Server**. They do not talk directly to kubelets or to each other.
 
 # Part 19. Real-World Use Cases
-
 Large organisations often introduce custom schedulers when the default placement logic is not enough. Common examples include:
 
 1. GPU scheduling
@@ -979,18 +913,18 @@ No. Scheduler names must be unique. Otherwise, multiple schedulers could attempt
 
 No. The scheduler only selects a node and updates the Pod's binding (`spec.nodeName`). The kubelet on the chosen node is responsible for creating and running the containers.
 
+```
 This topic also forms the foundation for understanding **Scheduling Framework**, **Scheduler Plugins (Filter, Score, Reserve, Permit, Bind)**, and **writing a scheduler using the Kubernetes Scheduler Framework**, which are the modern mechanisms used to customise scheduling logic without maintaining a completely separate scheduler binary. Those are the next logical topics after understanding multiple schedulers.
+```
 ---
 
 Custom scheduler
-
 ```
 spec:
   schedulerName: my-scheduler
 ```
 
 Now only
-
 ```
 my-scheduler
 ```
@@ -1031,7 +965,6 @@ Every normal Pod uses this scheduler automatically.
 ---
 
 # What does the Default Scheduler check?
-
 When deciding where to place a Pod, it evaluates many things:
 - Available CPU
 - Available memory
@@ -1082,7 +1015,6 @@ You need your own scheduler.
 Imagine a hospital.
 
 Normally there is one receptionist.
-
 ```
 Receptionist
 ↓
@@ -1226,7 +1158,6 @@ my-custom-scheduler
 ```
 
 Now create a Pod.
-
 ```
 apiVersion: v1
 kind: Pod
@@ -1557,6 +1488,11 @@ Although most clusters use only the default scheduler, custom schedulers are use
 - Multi-tenant platforms implementing organization-specific scheduling policies.
 
 For most day-to-day Kubernetes deployments, the default scheduler is sufficient, but Kubernetes provides this extension point for advanced use cases.
+
+
+References:
+https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/
+
 
 ---
 
