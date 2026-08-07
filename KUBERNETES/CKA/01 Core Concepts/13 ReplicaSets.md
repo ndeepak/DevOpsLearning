@@ -64,7 +64,7 @@ spec:
         - name: nginx-container
           image: nginx
 ```
-
+Inspect the deployment to determine the current strategy in use.
 Let’s break this down.
 
 ### a. `apiVersion`
