@@ -99,6 +99,7 @@ So a cluster upgrade is really a **coordinated component upgrade**.
 # 2. Why Can't We Upgrade Everything at Once?
 
 Imagine this production cluster:
+![](KUBERNETES/CKA/05%20Cluster%20Maintenance/Attachments/Pasted%20image%2020260826110501.png)
 
 ```
                  CONTROL PLANE
@@ -375,7 +376,6 @@ This is especially important for kubeadm-managed clusters.
 ---
 
 # 9. Why Minor Versions Matter
-
 Consider:
 
 ```
@@ -383,7 +383,6 @@ v1.34.1
 ```
 
 The:
-
 ```
 34
 ```
@@ -446,9 +445,7 @@ Let's understand each independently.
 ---
 
 # 11. Control Plane Upgrade
-
 Suppose:
-
 ```
 Current:
 
@@ -458,7 +455,6 @@ Controller Manager     v1.33
 ```
 
 Target:
-
 ```
 v1.34
 ```
@@ -466,7 +462,6 @@ v1.34
 The control plane must be upgraded first.
 
 Conceptually:
-
 ```
 Before:
 
@@ -582,7 +577,6 @@ This is why control-plane upgrades should be short and carefully planned.
 # 14. Control Plane Upgrade Using kubeadm
 
 For a kubeadm-managed cluster, the general process is:
-
 ```
 1. Upgrade kubeadm
 2. kubeadm upgrade plan
@@ -860,7 +854,7 @@ You should eventually see the expected node version.
 
 So:
 
-```
+```scss
                 CONTROL PLANE UPGRADE
 
                      v1.33
@@ -1014,6 +1008,7 @@ Depending on the workload, you may need other drain options.
 # 28. Worker Upgrade — Step 3: Upgrade kubeadm
 
 Install the target kubeadm version:
+`kubeadm upgrade plan`
 
 ```
 kubeadm v1.34.x
@@ -1841,7 +1836,7 @@ For the exam, I want you to mentally associate these commands with these situati
 
 # 49. The One Diagram to Remember
 
-```
+```scss
                     KUBERNETES UPGRADE
 
                          Current
